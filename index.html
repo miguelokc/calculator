@@ -12,10 +12,10 @@
         <div class ="screen"></div>
         <div class ="box">
             <button onclick="erase()">AC</button>
-            <button onclick="addition()">+</button>
-            <button onclick="subtraction()">-</button>
-            <button onclick="divide()">/</button>
-            <button onclick="multiply()">*</button>
+            <button onclick="setOperator('+')">+</button>
+            <button onclick="setOperator('-')">-</button>
+            <button onclick="setOperator('/')">/</button>
+            <button onclick="setOperator('*')">*</button>
             <button onclick="callOne(1)">1</button>
             <button onclick="callOne(2)">2</button>
             <button onclick="callOne(3)">3</button>
@@ -26,7 +26,7 @@
             <button onclick="callOne(8)">8</button>
             <button onclick="callOne(9)">9</button>
             <button onclick="callOne(0)">0</button>
-            <button>=</button>
+            <button onclick="equals()">=</button>
         </div>
     </div>
     <script src = "main.js"></script>
