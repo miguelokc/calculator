@@ -17,6 +17,9 @@ function callOne(num){
 function setOperator(op){
     const screen = document.getElementsByClassName("screen")[0];
    if (firstNumber == "") return;
+   if (secondNumber !== ""){
+    equals();
+   }
     operator = op;
     isSecond = true;
     screen.textContent = firstNumber + operator;
@@ -31,6 +34,11 @@ function equals(){
     const result = operate(operator, num1 , num2);
 
     screen.textContent = result;
+
+    firstNumber = result.toString();
+    secondNumber = "";
+    operator = "";
+    isSecond = false;
 
 }
 
